@@ -1,0 +1,120 @@
+body {
+    width: 320px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;  /* 모든 내용 중앙 정렬 */
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;  /* 위쪽 여백 줄이기 */
+}
+
+/* 다크 모드 지원 */
+body.dark-mode {
+    background-color: #222;
+    color: #f0f0f0;
+}
+
+.input-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff5252;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e04848;
+}
+
+/* 다크 모드에서 버튼 스타일 변경 */
+body.dark-mode button {
+    background-color: #444;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+    text-align: left; /* 키워드 목록은 왼쪽 정렬 유지 */
+}
+
+/* 키워드 항목 */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+body.dark-mode li {
+    background: #333;
+}
+
+/* 삭제 버튼 */
+.remove-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: red;
+}
+
+.remove-btn:hover {
+    color: darkred;
+}
+
+/* 초기화 버튼 */
+.clear-btn {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.clear-btn:hover {
+    background-color: #555;
+}
+
+/* 다크 모드 토글 버튼 */
+.toggle-btn {
+    width: 100%;
+    background-color: #444;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.toggle-btn:hover {
+    background-color: #666;
+}
